@@ -247,10 +247,10 @@
             }, [mapLoaded]);
 
             useEffect(() => {
-                if (mapLoaded && filteredStores.length > 0) {
+                if (mapLoaded && stores.length > 0) {
                     addMarkersToMap(filteredStores);
                 }
-            }, [searchTerm, statusFilter, stateFilter]);
+            }, [searchTerm, statusFilter, stateFilter, stores]);
 
             const filteredStores = useMemo(() => {
                 return stores.filter(store => {
