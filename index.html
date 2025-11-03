@@ -160,10 +160,6 @@
                     setStores(displayStores);
                     setDashboardCounts(counts);
                     setLastUpdated(new Date());
-
-                    if (mapLoaded) {
-                        addMarkersToMap(displayStores);
-                    }
                     
                 } catch (err) {
                     console.error('Error fetching data:', err);
